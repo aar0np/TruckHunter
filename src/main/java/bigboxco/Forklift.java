@@ -4,6 +4,7 @@ public class Forklift {
 
 	private int coordX;
 	private int coordY;
+	private final int speed = 2;
 	
 	public Forklift(int x, int y) {
 		coordX = x;
@@ -19,18 +20,18 @@ public class Forklift {
 	}
 	
 	public void moveDown() {
-		coordY++;
+		coordY = coordY + speed;
 	}
 	
 	public void moveUp() {
-		coordY--;
+		coordY = coordY - speed;
 	}
 	
 	public void moveLeft() {
-		coordX--;
+		coordX = coordX - speed;
 	}
 	
 	public void moveRight() {
-		coordX++;
+		coordX = coordX + speed;
 	}
 }
